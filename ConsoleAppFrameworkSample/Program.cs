@@ -41,4 +41,18 @@ namespace ConsoleAppFrameworkSample
                 .AddJsonFile("appsettings.json", false)
                 .AddEnvironmentVariables();
     }
+
+    // Batches.
+    public class Foo : ConsoleAppBase
+    {
+        public void Echo(string msg)
+        {
+            Console.WriteLine(msg);
+        }
+
+        public void Sum(int x, int y)
+        {
+            Console.WriteLine((x + y).ToString());
+        }
+    }
 }
